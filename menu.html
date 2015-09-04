@@ -1,0 +1,510 @@
+<!-- 
+		Mona Arablengeh 214042959
+		SIT 313 - Assignment 01
+        Restaurant Picker
+-->
+<!doctype html>
+	<html>
+		<head>
+            <meta charset="UTF-8">
+            <title>Menu page</title>  
+            <!-- To apply the theme which has been made by theme roller-->
+            <link rel="stylesheet" href="themes/RestaurantPicker.css" />
+            <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> 
+            <!-- /> -->
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		</head>
+
+		<body>
+ 
+            <!-- The theme column on theme roler="d" -->
+            <div data-role="page" id="menu" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+            	<div data-role="content">
+        
+                    <!--linking the logo to the home page with flip transition-->
+                    <a href="214042959_ass01.html" data-transition="flip">
+                    <!--placing logo by % unit to fit in any screen resolution -->
+                    <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+    
+                    <!--Input the list information of the menu page by list view data role -->
+                    <div>
+                        <!--"data-inset=true" to style the listview -->
+                        <ul data-role="listview" data-inset="true" >
+                            <!-- # is using to link the word to the desired page-->
+                            <!-- data-direction="reverse" will make the transition direction opposit of its default direction -->
+                            <li><a href="#salads" data-transition="slide"
+                             data-direction="reverse"> <img src="images/chicken_salad.jpg"/> <h3> Salads</h3></a></li>
+                            <li><a href="#mainD" data-transition="slide"
+                             data-direction="reverse"> <img src="images/mincedbeef_noodle.jpg"/> <h3> Main Dishes </h3></a></li>
+                            <li><a href="#desserts" data-transition="slide"
+                             data-direction="reverse"> <img src="images/desert.jpg"/> <h3> Desserts</h3></a></li>
+                        </ul>
+                     </div> <!-- close the list-->
+                 </div> <!-- /content data role 
+
+                    <!-- footer --> <!-- position fixed at the bottom -->
+                    <div data-role="footer" data-position="fixed"> 
+                    <h2> &copy; Mona Bano 2015 </h2>
+             		</div> <!-- /footer-->
+         
+            </div><!-- /menu page finishes-->
+            
+            <!-- Salads page -->
+            
+       <div data-role="page" id="salads" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+           <div data-role="content">
+        
+                <!--linking the logo to the home page with flip transition-->
+                <a href="214042959_ass01.html" data-transition="flip">
+                <!--placing logo by % unit to fit in any screen resolution -->
+                <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+
+                <!--Input the list information of the menu page by list view data role -->
+                <div>
+                	<!--"data-inset=true" to style the listview -->
+                    <ul data-role="listview" data-inset="true" >
+                        <!-- # is using to link the word to the desired page-->
+                        <li><a href="#chikSal" data-transition="flip"> <img src="images/chicken_salad.jpg"/> <h3> Chicken Salad</h3></a></li>
+                        <li><a href="#mushSal" data-transition="flip"> <img src="images/omlete_salad.jpg"/> <h3> Mushroom Salad </h3></a></li>
+                    </ul>
+                        <!-- provide a back button by using data-rel back -->
+                        <a href="#" class="ui-btn" data-rel="back">Back to Menu</a>
+                 </div> <!-- close the list-->
+            </div> <!-- /content data role -->
+
+				<!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+         
+       </div><!-- /salads page finishes-->
+       
+       <!-- Main dish page -->
+            
+       <div data-role="page" id="mainD" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+           <div data-role="content">
+        
+                <!--linking the logo to the home page with flip transition-->
+                <a href="214042959_ass01.html" data-transition="flip">
+                <!--placing logo by % unit to fit in any screen resolution -->
+                <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+
+                <!--Input the list information of the menu page by list view data role -->
+                <div>
+                	<!--"data-inset=true" to style the listview -->
+                    <ul data-role="listview" data-inset="true" >
+                        <!-- # is using to link the word to the desired page-->
+                        <li><a href="#brocBear" data-transition="flip">
+                         <img src="images/brokoli_meal.jpg"/> <h3> Broccoli Bear Meal</h3></a></li>
+                        <li><a href="#beefndl" data-transition="flip"> 
+                        <img src="images/mincedbeef_noodle.jpg"/> <h3> beef Mince Noodle </h3></a></li>
+                    </ul>
+                        <!-- provide a back button by using data-rel back -->
+                        <a href="#" class="ui-btn" data-rel="back">Back to Menu</a>
+                 </div> <!-- close the list-->
+            </div> <!-- /content data role -->
+
+				<!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+         
+       </div><!-- /main dishes page finishes-->
+       
+       <!-- desserts page -->
+            
+       <div data-role="page" id="desserts" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+           <div data-role="content">
+        
+                <!--linking the logo to the home page with flip transition-->
+                <a href="214042959_ass01.html" data-transition="flip">
+                <!--placing logo by % unit to fit in any screen resolution -->
+                <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+
+                <!--Input the list information of the menu page by list view data role -->
+                <div>
+                	<!--"data-inset=true" to style the listview -->
+                    <ul data-role="listview" data-inset="true" >
+                        <!-- # is using to link the word to the desired page-->
+                        <li><a href="#cheese" data-transition="flip">
+                         <img src="images/desert.jpg"/> <h3> Cheesecake And Strawberry</h3></a></li>
+                        <li><a href="#minions" data-transition="flip"> 
+                        <img src="images/dessert2.jpg" style="margin-left:2%;"/> <h3> Minions Dessert </h3></a></li>
+                    </ul>
+                        <!-- provide a back button by using data-rel back -->
+                        <a href="#" class="ui-btn" data-rel="back">Back to Menu</a>
+                 </div> <!-- close the list-->
+            </div> <!-- /content data role -->
+
+				<!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+         
+       </div><!-- /desserts page finishes-->
+       
+       
+       <!-- chikSal page -->
+            
+       <div data-role="page" id="chikSal" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+           <div data-role="content">
+        
+                	<!--linking the logo to the home page with flip transition-->
+                    <a href="214042959_ass01.html" data-transition="flip">
+                    <!--placing logo by % unit to fit in any screen resolution -->
+                    <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+
+                <!--Input the recipe information of the chikSal page-->
+                <div>
+                	<!--"data-inset=true" to style the main -->
+                    <div data-role="main" data-inset="true" >
+                    
+                        <!-- bring up the image of the food -->
+                        <img src="images/chicken_salad.jpg" style="width:40%;" />
+                    
+                    <!-- text area readonly to fit the recipe -->
+                    <!--indention considering the position of the text 									                     on the web app -->
+                    <textarea readonly name="chikSal" id="chikSal"
+                    <h3>Chicken Salad
+       What we use: 
+       200g				Chicken Breast
+       1				Medium Tomato
+       100				Broccoli
+       150g				Lettuce
+       100g				Cabbage
+       150g				Carrots  
+       1 tsp			        Salt 
+       ½ tsp			Black Pepper 
+       1tbs				Olive Oil 
+    
+    
+       How we do:
+       Bring a pan of water to the boil.
+       Add the chicken breast, oil, salt and pepper to it and boilthem for 30 minutes.                    			
+       Cut all vegetables and onions in small pieces.
+       Mix all ingredients together</textarea> <!-- /> -->
+       
+                       <!-- provide a back button by using data-rel back -->
+                       <a href="#" class="ui-btn" data-rel="back">Back to Salads</a>
+                        
+                 </div> <!-- close the main-->
+            </div> <!-- /content data role -->
+            </div>
+
+				<!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+         
+       </div><!-- /chikSal page finishes-->
+            
+       <!-- mushSal page -->
+            
+       <div data-role="page" id="mushSal" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+        <div data-role="content">
+        
+                <!--linking the logo to the home page with flip transition-->
+                <a href="214042959_ass01.html" data-transition="flip">
+                <!--placing logo by % unit to fit in any screen resolution -->
+                <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+
+                <!--Input the recipe information of the chikSal page-->
+                <div>
+                	<!--"data-inset=true" to style the main -->
+                    <div data-role="main" data-inset="true" >
+                    
+                        <!-- bring up the image of the food -->
+                        <img src="images/omlete_salad.jpg" style="width:40%;" />
+                    
+                    <!-- text area readonly to fit the recipe -->
+                    <!--indention considering the position of the text 									                     on the web app -->
+                    <textarea readonly name="mushSal" id="mushSal"
+                    <h3>Mushroom Salad
+       What we use: 
+       200g				Mushroom
+       1		      		 Big egg
+       100             		 Broccoli
+       150g            		 Lettuce
+       100g                  	Cabbage
+       150g            		 Carrots  
+       1 tsp           		 Salt 
+       ½ tsp          		 Black Pepper 
+       1tbs            		 Olive Oil 
+    
+    
+       How we do:
+       Heat the oil in a frying pan.
+       Add chopped mushrooms to it and fry it for one minute.                    			
+       Bring a small pan of lightly salted water to boil and add Broccoli.
+       Boil Broccoli for 2 minutes and then drain a colander.
+       Fry the egg in another frying pan and cut it in small pieces
+       Add all ingredients together in a bowl.</textarea> <!-- /> -->
+       
+                       <!-- provide a back button by using data-rel back -->
+                       <a href="#" class="ui-btn" data-rel="back">Back to Salads</a>
+                        
+                 </div> <!-- close the main-->
+            </div> <!-- /content data role -->
+            
+
+				<!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+                </div>
+         
+       </div><!-- /mushSal page finishes-->
+       
+       
+       <!-- brocBear page -->
+            
+       <div data-role="page" id="brocBear" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+           <div data-role="content">
+        
+                	<!--linking the logo to the home page with flip transition-->
+                    <a href="214042959_ass01.html" data-transition="flip">
+                    <!--placing logo by % unit to fit in any screen resolution -->
+                    <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+
+                <!--Input the recipe information of the chikSal page-->
+                <div>
+                	<!--"data-inset=true" to style the main -->
+                    <div data-role="main" data-inset="true" >
+                    
+                        <!-- bring up the image of the food -->
+                        <img src="images/brokoli_meal.jpg" style="width:40%;" />
+                    
+                    <!-- text area readonly to fit the recipe -->
+                    <!--indention considering the position of the text 									                     on the web app -->
+                    <textarea readonly name="brocBear" id="brocBear"
+                    <h3>Broccoli Bear Meal
+       What we use: 
+       225g				Broccoli
+       200g				Rice
+       100				Green Pea
+       1				Medium Capsicum
+       100g				Mushroom 
+       1 tsp			        Salt
+        
+    
+    
+       How we do:
+       Mix the green pea and mushrooms and fry in a pan.
+       Bring a pan of salted water to the boil. Add the rice and boil it for 20 minutes.                    			
+       Bring another pan of lightly salted water to boil and add Broccoli.
+       Boil Broccoli for 2 minutes and then drain a colander.
+       Put rice in middle of the dish and pour other ingredients around it.</textarea> <!-- /> -->
+       
+                       <!-- provide a back button by using data-rel back -->
+                       <a href="#" class="ui-btn" data-rel="back">Back to Main Dishes</a>
+                        
+                 </div> <!-- close the main-->
+            </div> <!-- /content data role -->
+
+				<!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+                </div>
+         
+       </div><!-- /brocBear page finishes-->
+       
+       
+       <!-- beefndl page -->
+            
+       <div data-role="page" id="beefndl" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+           <div data-role="content">
+        
+                	<!--linking the logo to the home page with flip transition-->
+                    <a href="214042959_ass01.html" data-transition="flip">
+                    <!--placing logo by % unit to fit in any screen resolution -->
+                    <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+
+                <!--Input the recipe information of the chikSal page-->
+                <div>
+                	<!--"data-inset=true" to style the main -->
+                    <div data-role="main" data-inset="true" >
+                    
+                        <!-- bring up the image of the food -->
+                        <img src="images/mincedbeef_noodle.jpg" style="width:40%;" />
+                    
+                    <!-- text area readonly to fit the recipe -->
+                    <!--indention considering the position of the text 									                     on the web app -->
+                    <textarea readonly name="beefndl" id="beefndl"
+                    <h3>Beef Mince Noodle
+       What we use: 
+       250g				Beef Mince
+       1				Small Onion
+       ½ tsp			Tumeric
+       1 tsp				Soy Sauce
+       1 tsp				Black Pepper 
+       100g			        Green Pea
+       1				Medium Capsicum
+       100g				Mushroom
+        
+    
+    
+       How we do:
+       Freeze the Beef Mince in noodle shape.
+       Heat the oil in a frying pan.
+       Add chopped onion to it and fry it for one minute.                    			
+       Then add frozen beef mince and turmeric and Soy sauce and Pepper to it.
+       Fry Capsicum and Green pea in another frying pan.
+       Mix all ingredients together.</textarea> <!-- /> -->
+       
+                       <!-- provide a back button by using data-rel back -->
+                       <a href="#" class="ui-btn" data-rel="back">Back to Main Dishes</a>
+                        
+                 </div> <!-- close the main-->
+            </div> <!-- /content data role -->
+
+				<!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+                </div>
+         
+       </div><!-- /beefndl page finishes-->
+       
+       
+       <!-- cheese page -->
+            
+       <div data-role="page" id="cheese" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+           <div data-role="content">
+        
+                	<!--linking the logo to the home page with flip transition-->
+                    <a href="214042959_ass01.html" data-transition="flip">
+                    <!--placing logo by % unit to fit in any screen resolution -->
+                    <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+
+                <!--Input the recipe information of the chikSal page-->
+                <div>
+                	<!--"data-inset=true" to style the main -->
+                    <div data-role="main" data-inset="true" >
+                    
+                        <!-- bring up the image of the food -->
+                        <img src="images/desert.jpg" style="width:40%;" />
+                    
+                    <!-- text area readonly to fit the recipe -->
+                    <!--indention considering the position of the text 									                     on the web app -->
+                    <textarea readonly name="cheese" id="cheese"
+                    <h3>Cheesecake And Strawberry
+       What we use: 
+       50g				Arnotts Biscuit
+       50g				Butter
+       100g				Creamy cheese
+       ½ cup			Sugar
+       ½ tsp				Salt
+       ½ tsp			Vanilla 
+       1				Medium egg
+       ½ cup			Sour cream 
+       2				Big Strawberry
+        
+    
+    
+       How we do:
+       Place the biscuit in a food processor and make it finely crushed add butter to it and make a layer of it and put it in fridge.
+       Place cheese, sugar and sour cream in a food processor and mix it to be smooth.
+       Then add egg and vanilla to it and mix it.                    			
+       Preheat the oven to 160 degree and put the mixture in it and bake it for one hour.</textarea> <!-- /> -->
+       
+                       <!-- provide a back button by using data-rel back -->
+                       <a href="#" class="ui-btn" data-rel="back">Back to Desserts</a>
+                        
+                 </div> <!-- close the main-->
+            </div> <!-- /content data role -->
+
+				<!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+                </div>
+         
+       </div><!-- /cheese page finishes-->
+       
+       <!-- minions page -->
+            
+       <div data-role="page" id="minions" data-theme="d" > 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+           <div data-role="content">
+        
+                	<!--linking the logo to the home page with flip transition-->
+                    <a href="214042959_ass01.html" data-transition="flip">
+                    <!--placing logo by % unit to fit in any screen resolution -->
+                    <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a>  
+
+                <!--Input the recipe information of the chikSal page-->
+                <div>
+                	<!--"data-inset=true" to style the main -->
+                    <div data-role="main" data-inset="true" >
+                    
+                        <!-- bring up the image of the food -->
+                        <img src="images/dessert2.jpg" style="width:40%;" />
+                    
+                    <!-- text area readonly to fit the recipe -->
+                    <!--indention considering the position of the text 									                     on the web app -->
+                    <textarea readonly name="minions" id="minions"
+                    <h3>Minions Dessert
+       What we use: 
+       		1              Small Banana
+		50g           Almond
+		30g           Cashew
+		⅓  cup      Sugar 
+		½ tsp        Vanilla
+		½ tsp        Cinnamon
+		⅓ cup       Sour cream 
+        
+    
+    
+       How we do:
+       Cut the banana in small pieces.
+       Mix Sour cream, sugar and vanilla.
+       Put Almond and Cashew on top of the cream and pour cinnamon on it.</textarea> <!-- /> -->
+       
+                       <!-- provide a back button by using data-rel back -->
+                       <a href="#" class="ui-btn" data-rel="back">Back to Desserts</a>
+                        
+                 </div> <!-- close the main-->
+            </div> <!-- /content data role -->
+
+				<!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+                </div>
+         
+       </div><!-- /minions page finishes-->
+       
+		</body>
+	</html>

@@ -1,0 +1,68 @@
+<!-- 
+		Mona Arablengeh 214042959
+		SIT 313 - Assignment 01
+        Restaurant Picker
+-->
+<!doctype html>
+	<html>
+		<head>
+            <meta charset="UTF-8">
+            <title>Find us page</title>  
+            <!-- To apply the theme which has been made by theme roller-->
+            <link rel="stylesheet" href="themes/RestaurantPicker.css" />
+            <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> 
+            <!-- /> -->
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		</head>
+
+		<body>
+ 
+            <!-- The theme column on theme roler="d" -->
+            <div data-role="page" id="findUs" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+            <div data-role="content">
+        
+                <!--linking the logo to the home page with flip transition-->
+                <a href="214042959_ass01.html" data-transition="flip">
+                <!--placing logo by % unit to fit in any screen resolution -->
+                <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+                
+                <!-- start the main contents -->
+                <!-- class to order the location features in a right way -->
+                <div>
+					<h1> How to find us!</h1>
+				<div>
+                <!-- Developer address section-->
+				<h3> Our Address :</h3>
+                <p> Minions Restaurant</p>
+				<p>221 Burwood Highway</p>
+				<p>Burwood</p>
+				<p>VIC 3125</p> 
+                <p>Australia</p>
+				</div> <!-- /> -->
+                
+                <!-- Embeding the address by google map iframe method -->
+				<div>
+				<iframe src=						"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.564985389086!2d145.1157016!3d-37.8470687!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDUwJzUwLjUiUyAxNDXCsDA2JzU2LjUiRQ!5e0!3m2!1sen!2sus!4v1441193013049" width="300" height=auto frameborder="0" style="border:0" allowfullscreen alt="Mona Bano"></iframe>
+				</div> <!-- /> -->
+                
+                <!-- A data role button to guide the user to the location on google map -->
+                <div>
+					<a href="https://www.google.com/maps/place/37%C2%B050'50.5%22S+145%C2%B006'56.5%22E/@-37.8470687,145.1157016,17z/data=!4m2!3m1!1s0x0:0x0?hl=en" 
+                	data-role="button">
+               		Find us on Google! </a>
+                 </div> <!-- /> -->
+                 
+                 <!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+         
+            </div><!-- /findUs page finishes-->
+
+		</body>
+	</html>

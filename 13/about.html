@@ -1,0 +1,103 @@
+<!-- 
+		Mona Arablengeh 214042959
+		SIT 313 - Assignment 01
+        Restaurant Picker
+-->
+<!doctype html>
+	<html>
+		<head>
+            <meta charset="UTF-8">
+            <title>Menu page</title>  
+            <!-- To apply the theme which has been made by theme roller-->
+            <link rel="stylesheet" href="themes/RestaurantPicker.css" />
+            <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> 
+            <!-- /> -->
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+            
+            <!-- for the slide show -->
+            <script>
+				<!-- making a function to tell the app sliding the photos -->
+				function slideSwitch() {
+					var $active = $('div#slideshow IMG.active');
+					
+					<!-- ask for the next image in the row -->
+					var $next = $active.next();    
+			
+					$next.addClass('active');
+			
+					$active.removeClass('active');
+				}
+			
+				$(function() {
+					<!-- length between switching the images on second -->
+					setInterval( "slideSwitch()", 5000 );
+				});
+			</script>
+		</head>
+
+		<body>
+          <!-- The theme column on theme roler="d" -->
+            <div data-role="page" id="about" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+            <div data-role="content">
+        
+                <!--linking the logo to the home page with flip transition-->
+                <a href="214042959_ass01.html" data-transition="flip">
+                <!--placing logo by % unit to fit in any screen resolution -->
+                <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+                
+                <!-- build an image gallery slideshow -->
+                    <div id="slideshow">
+                    	<!-- absolute position is used to bring up images on each other -->
+                        <img src="images/sunshine_egg.jpg" style="position:absolute; width: 50%; height:auto;" 
+                        class="active" /> <!-- class="active" will make the image over each other  -->
+                        <img src="images/desert.jpg" style="position:absolute; width: 50%; height:auto;" /> 
+                        <img src="images/chicken_salad.jpg" style="position:absolute; width: 50%; height:auto;" />
+                        <img src="images/brokoli_meal.jpg" style="position:absolute; width: 50%; height:auto;" />
+    				</div>
+
+            <!--"data-inset=true" to style the listview -->
+				<ul data-role="listview" data-inset="true"
+                
+                 data-filter="true">
+                 <!-- Enable filtering to enable the search feature-->
+                 
+                
+                 	<!-- collapsible menu allow the user to slide the list without going to another page -->
+                    <li  data-role="collapsible"> 
+                        <!-- title of the collapsible item -->
+                        <h3>About Minions Restaurant</h3>
+
+                        <p><strong> Minions Restaurant</strong> is a family owned restaurant, established by one of the greatest contemporary artists <strong>Mona Bano </strong> <br>
+                        She brought other arts such as painting and fashion in her dishes which makes every dish unique. <br>
+                         Indeed it’s hard to eat a piece of art but you can’t resist the taste. <br>
+						Great atmosphere of this restaurant doesn’t let you leave and you have to know that every week you are going to see a new theme in Minions. <br>
+                        </p> 
+					</li> <!-- /> -->
+                    
+                                     	<!-- collapsible menu allow the user to slide the list without going to another page -->
+                    <li  data-role="collapsible"> 
+                        <!-- title of the collapsible item -->
+                        <h3>About App Developer</h3>
+
+                        <p><strong> Minions Restaurant</strong> has been built by a student <strong>Mona Arablengeh (Bano) </strong> who is currently studying bachelor of Information Technology (Mobile Apps and Development) <br>
+                        This app has been built for Mobile computing assignment and can <strong>NOT</strong> be used for commercial purpose.  <br>
+                         All the materials and assets (photos, logos, etc) used on this app are made by the developer and are <strong>NOT</strong> for commercial use.
+                         Hope you like this app, please feel free to contact us and give us a feedback, thanks.
+                         Mona Bano
+                         8:)
+                        </p> 
+					</li> <!-- /> -->
+            <!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+         
+            </div><!-- /about page finishes-->
+
+		</body>
+	</html>

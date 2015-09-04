@@ -1,0 +1,56 @@
+<!-- 
+		Mona Arablengeh 214042959
+		SIT 313 - Assignment 01
+        Restaurant Picker
+-->
+<!doctype html>
+	<html>
+		<head>
+            <meta charset="UTF-8">
+            <title>Restaurant Picker</title>  
+            <!-- To apply the theme which has been made by theme roller-->
+            <link rel="stylesheet" href="themes/RestaurantPicker.css" />
+            <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> 
+            <!-- /> -->
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		</head>
+
+		<body>
+ 
+            <!-- start the home page -->
+            
+            <!-- The theme column on theme roler="d" -->
+            <div data-role="page" id="home" data-theme="d" > 
+            <!-- defined an id for the page so we can link to it by this id later -->
+               
+         
+            <!-- Start inputing the main content of the page -->
+            <div data-role="content">
+        
+                <!-- placing the logo by percentage unit so it will fit in any screen resolution-->
+                <a href="#home" data-transition="flip"><img src="images/logo.png" style="margin:5% 1% 10% 13%; width:70%;"/></a> 
+         
+                <!--Input the navbar information of the page -->
+                <div>
+                <!-- the main nav bar -->
+                <a href="menu.html" data-transition="slidedown"><img src="images/menu.png" style="margin:15% 3% 20% 4%; width:20%;"/></a>
+                <a href="recipe.html" data-transition="slidedown"><img src="images/recipe.png" style="margin:30% 5% 20% 10%; width:20%;"/></a>
+                <a href="rate.html" data-transition="slidedown"><img src="images/rate.png" style="margin:30% 1% 20% 10%; width:20%;"/></a>
+                <!-- data-direction="reverse" will change the direction of the data transition movement -->
+                <a href="contact.html" data-transition="slidedown" data-direction="reverse"><img src="images/call.png" style="margin:1% 1% 20% 4%; width:20%;"/></a>
+                <a href="about.html" data-transition="slidedown" data-direction="reverse"><img src="images/about.png" style="margin:1% 5% 20% 10%; width:20%;"/></a>
+                <a href="location.html" data-transition="slidedown" data-direction="reverse"><img src="images/location.png" style="margin:1% 5% 20% 10%; width:20%;"/></a>
+                 </div>
+        
+                <!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+         
+            </div><!-- /home page finishes-->
+            
+		</body>
+ 
+	</html>

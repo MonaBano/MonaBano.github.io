@@ -1,0 +1,96 @@
+<!-- 
+		Mona Arablengeh 214042959
+		SIT 313 - Assignment 01
+        Restaurant Picker
+-->
+<!doctype html>
+	<html>
+		<head>
+            <meta charset="UTF-8">
+            <title>Rate us!</title>  
+            <!-- To apply the theme which has been made by theme roller-->
+            <link rel="stylesheet" href="themes/RestaurantPicker.css" />
+            <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> 
+            <!-- /> -->
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		</head>
+
+		<body>
+ 
+            <!-- The theme column on theme roler="d" -->
+            <div data-role="page" id="rate" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+            <div data-role="content">
+        
+                <!--linking the logo to the home page with flip transition-->
+                <a href="214042959_ass01.html" data-transition="flip">
+                <!--placing logo by % unit to fit in any screen resolution -->
+                <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+                
+                <!-- Start a form to build a feedback form and a drop down menu to rate the app -->
+                <form>
+                	<!-- Set the for attribute of the label to match the ID of the select-->
+		  			<label for="select-choice-0" class="select">
+		  				<h3 class="titles"> Minions Restaurant
+                        would appreciate you taking time to complete
+ 						the following feedback form.</h3>
+                <br> 
+                <!-- start a form to get feedback from the users by using "post" method-->
+          		<form method="post" action="#feedback" data-ajax="false">
+                <!-- input type text for the user can type their details-->
+                    <input type="text" name="name" id="name" placeholder="Name*">
+                    <input type="email" id="email" name="email" placeholder="Email*"/>
+                    <!-- create control group to build a radio button as gender menu options -->
+                    <fieldset data-role="controlgroup">
+                        <legend>Gender :</legend>
+                        <label for="male">Male</label>
+                        <!-- input type radio to build radio button options -->
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                    </fieldset>
+                    <fieldset data-role="controlgroup">
+                        <legend>Qualification :</legend>
+                        <label for="graduation">Graduation</label>
+                        <!-- input type check box to build checkboxes options -->
+                        <input type="checkbox" id="graduation" value="graduation">
+                        <label for="postgraduation">Post Graduation</label>
+                        <input type="checkbox" id="postgraduation" value="postgraduation">
+                        <label for="other">Other</label>
+                        <input type="checkbox" id="other" value="other">
+                    </fieldset>
+                    </form>
+                     <label> Please tell us how happy you are with our service and food <br>
+                      </h3>
+		  			</label>
+                    <!-- specifying name and id for the select menu-->
+		  			<select name="rateUs" id="rateUs" 
+                    	data-native-menu="false" data-theme="d" > 
+                        <!-- To use custom menus on a specific select -->
+                        <!--start the menu by building the options-->
+                        <option value="four" class="four"> Very Happy </option>
+                        <option value="three" class="three"> Happy  </option>
+                        <option value="two" class="two"> Could be better </option>
+                        <option value="one" class="one"> Not happy  </option>
+	      			</select> <!-- end of rate us select form -->
+                    <form>
+                    <label for="comment">Please give us your feedback in few sentences :</label>
+                    <textarea name="addcomment" id="comment" placeholder="Message"></textarea>
+                    <!-- to submit the form with d theme look-->
+                    <input type="submit" value="Submit" data-theme="d">
+                </form> <!-- feed back form finishes -->
+              </div><!-- /> -->
+          	  	
+              
+              <!-- footer --> <!-- position fixed at the bottom -->
+              <div data-role="footer" data-position="fixed"> 
+              <h2> &copy; Mona Bano 2015 </h2>
+              </div> <!-- /footer -->
+         
+            </div><!-- /rate us page finishes-->
+		</body>
+	</html>

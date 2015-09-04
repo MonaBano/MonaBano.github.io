@@ -1,0 +1,59 @@
+<!-- 
+		Mona Arablengeh 214042959
+		SIT 313 - Assignment 01
+        Restaurant Picker
+-->
+<!doctype html>
+	<html>
+		<head>
+            <meta charset="UTF-8">
+            <title>Menu page</title>  
+            <!-- To apply the theme which has been made by theme roller-->
+            <link rel="stylesheet" href="themes/RestaurantPicker.css" />
+            <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> 
+            <!-- /> -->
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		</head>
+
+		<body>
+ 
+            <!-- The theme column on theme roler="d" -->
+            <div data-role="page" id="contact" data-theme="d"> 
+            <!-- defined an id for the page so we can link to it by this id later -->
+         
+            <!-- Start inputing the main content of the page -->
+            <div data-role="content">
+        
+                <!--linking the logo to the home page with flip transition-->
+                <a href="214042959_ass01.html" data-transition="flip">
+                <!--placing logo by % unit to fit in any screen resolution -->
+                <img src="images/logo.png" style="margin:20% 43% 5% 13%; width:70%;"/></a> 
+                
+                <!-- make a button to allow the user call the number directly by using "tel" anchor tag and jQuery -->
+            	<div>
+                	<h1 class="titles"> How to contact us!</h1> <br>
+                    <a href="tel:0469346493"  data-role="button"> Call us by 0469346493</a>
+                </div> <!-- /> -->
+                
+                <!-- a horisontal line to seperate the sections -->
+				<hr/>
+                
+                <!-- make a button to allow the user email directly by using "mailto" -->
+                <div>
+    			<a href="mailto:bano.mona.a@gmail.com" 
+       			data-role="button"> Email us by bano.mona.a@gmail.com </a>
+  				</div> <!-- /> -->
+
+
+
+				<!-- footer --> <!-- position fixed at the bottom -->
+                <div data-role="footer" data-position="fixed"> 
+                <h2> &copy; Mona Bano 2015 </h2>
+                </div> <!-- /footer-->
+         
+            </div><!-- /contact page finishes-->
+            
+		</body>
+	</html>
